@@ -4,7 +4,7 @@ To initialize a react-app with typescript:
 1. Install create-react-app.
 ```shell
 # install it globally, skip -g if you want
-npm install craete-react-app -g
+npm install -g create-react-app
 ```
 2. Create react app with typescript.
 ```shell

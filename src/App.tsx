@@ -7,10 +7,11 @@ import {
   Switch,
 } from "react-router-dom";
 import { routes } from "./config/routes";
+import { SnackbarProvider } from "./pages/hook";
 
 const App: React.FC<{}> = (props) => {
   return (
-    <div>
+    <SnackbarProvider>
       <BrowserRouter>
         <Switch>
           {routes.map((route, i) => {
@@ -31,7 +32,7 @@ const App: React.FC<{}> = (props) => {
           })}
         </Switch>
       </BrowserRouter>
-    </div>
+    </SnackbarProvider>
   );
 };
 
